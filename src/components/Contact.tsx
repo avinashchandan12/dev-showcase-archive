@@ -36,7 +36,7 @@ const Contact = () => {
     }, 1500);
   };
   return <section id="contact" className="relative overflow-hidden bg-slate-900 py-0">
-      <div className="section-container mx-0 py-0">
+      <div className="section-container mx-0 py-[76px]">
         <ScrollReveal>
           <p className="text-primary font-medium mb-4 text-center">Contact</p>
         </ScrollReveal>
