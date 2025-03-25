@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import ScrollReveal from './ui/ScrollReveal';
@@ -25,13 +26,16 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-3xl">
             <ScrollReveal delay={0.1}>
-              <p className="text-accent font-medium mb-4">Full Stack Developer</p>
+              <p className="text-accent font-medium mb-4">Full Stack Developer & AI Enthusiast</p>
             </ScrollReveal>
             
             <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-              <TypewriterEffect words={[{
-              text: "Avinash Chandan"
-            }]} className="block text-gradient" />
+              <TypewriterEffect words={[
+                { text: "Avinash Chandan" },
+                { text: "Full Stack Developer" },
+                { text: "AI Enthusiast" },
+                { text: "Problem Solver" }
+              ]} className="block text-gradient" />
               <ScrollReveal delay={0.3} direction="up">
                 
               </ScrollReveal>
@@ -40,7 +44,7 @@ const Hero = () => {
             <ScrollReveal delay={0.6} direction="up">
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
                 A logical interpreter and Full Stack Developer with expertise in Backend development,
-                system design, and ensuring system reliability.
+                system design, AI integration, and ensuring system reliability.
               </p>
             </ScrollReveal>
             

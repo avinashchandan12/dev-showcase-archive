@@ -1,3 +1,4 @@
+
 import React from "react";
 import { cn } from "@/lib/utils";
 
@@ -31,8 +32,9 @@ const TypewriterEffect = ({
 
         // If word is complete, start deleting after a delay
         if (currentText === word) {
-          // Don't delete for the name, keep it visible
-          return;
+          setTimeout(() => {
+            setIsDeleting(true);
+          }, 2000); // Wait 2 seconds before starting to delete
         }
       } else {
         // Deleting
