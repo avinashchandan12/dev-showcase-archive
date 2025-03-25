@@ -1,18 +1,14 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import ScrollReveal from './ui/ScrollReveal';
 import CodeSVG from './svg/CodeSVG';
 import WaveSVG from './svg/WaveSVG';
 import TypewriterEffect from './ui/TypewriterEffect';
-
 const Hero = () => {
-  return (
-    <section id="hero" className="min-h-screen flex items-center pt-20 relative overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-noise opacity-[0.02] z-0 pointer-events-none"
-        style={{ backgroundSize: '200px 200px' }}
-      />
+  return <section id="hero" className="min-h-screen flex items-center pt-20 relative overflow-hidden">
+      <div className="absolute inset-0 bg-noise opacity-[0.02] z-0 pointer-events-none" style={{
+      backgroundSize: '200px 200px'
+    }} />
       
       {/* Background gradients */}
       <div className="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />
@@ -33,12 +29,11 @@ const Hero = () => {
             </ScrollReveal>
             
             <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-              <TypewriterEffect 
-                words={[{ text: "Avinash Chandan" }]} 
-                className="block text-gradient"
-              />
+              <TypewriterEffect words={[{
+              text: "Avinash Chandan"
+            }]} className="block text-gradient" />
               <ScrollReveal delay={0.3} direction="up">
-                <span className="text-gradient block">Software Engineer</span>
+                
               </ScrollReveal>
             </h1>
             
@@ -72,8 +67,6 @@ const Hero = () => {
           </ScrollReveal>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
