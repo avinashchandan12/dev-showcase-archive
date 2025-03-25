@@ -2,7 +2,6 @@ import React from 'react';
 import { ArrowUpRight, Github } from 'lucide-react';
 import AnimatedText from './ui/AnimatedText';
 import ScrollReveal from './ui/ScrollReveal';
-
 interface Project {
   title: string;
   description: string;
@@ -11,23 +10,22 @@ interface Project {
   github?: string;
   demo?: string;
 }
-
 const projects: Project[] = [{
-  title: "Astro Match AI",
-  description: "An AI-powered compatibility matching system that uses machine learning algorithms to predict successful relationships.",
-  technologies: ["Python", "TensorFlow", "React", "Node.js", "OpenAI API"],
+  title: "E-commerce Platform",
+  description: "A full-stack e-commerce platform built for a USA-based client with robust backend systems and user-friendly interface.",
+  technologies: ["Node.js", "Angular", "PostgreSQL", "CI/CD"],
   image: "gradient-1",
-  github: "#"
-}, {
-  title: "Trade Insight AI",
-  description: "Financial analysis platform that leverages AI to provide market insights and trading recommendations based on historical data.",
-  technologies: ["Python", "PyTorch", "Django", "MongoDB", "D3.js"],
-  image: "gradient-2",
   github: "#"
 }, {
   title: "VS Code Extension with LLMs",
   description: "A hackathon-winning VS Code extension that runs on Local LLMs and acts as a co-programmer.",
   technologies: ["TypeScript", "VS Code API", "LLM", "Machine Learning"],
+  image: "gradient-2",
+  github: "#"
+}, {
+  title: "Automobile Management System",
+  description: "Backend system for a Fortune 500 company's automobile project with optimization and smooth deployment features.",
+  technologies: ["Django", "Docker", "Kubernetes", "Jenkins", "Grafana"],
   image: "gradient-3",
   github: "#"
 }, {
@@ -37,14 +35,12 @@ const projects: Project[] = [{
   image: "gradient-4",
   github: "#"
 }];
-
 const gradients = {
   "gradient-1": "from-blue-500 to-purple-500",
   "gradient-2": "from-emerald-500 to-teal-500",
   "gradient-3": "from-orange-500 to-amber-500",
   "gradient-4": "from-pink-500 to-rose-500"
 };
-
 const Projects = () => {
   return <section id="projects" className="relative overflow-hidden py-0">
       <div className="section-container py-0">
@@ -92,5 +88,4 @@ const Projects = () => {
       </div>
     </section>;
 };
-
 export default Projects;

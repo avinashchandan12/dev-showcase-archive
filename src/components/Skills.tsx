@@ -7,13 +7,11 @@ import BackendSVG from './svg/BackendSVG';
 import CloudSVG from './svg/CloudSVG';
 import DevOpsSVG from './svg/DevOpsSVG';
 import WaveSVG from './svg/WaveSVG';
-
 interface SkillCategory {
   name: string;
   skills: string[];
   icon: React.ReactNode;
 }
-
 const skillCategories: SkillCategory[] = [{
   name: "Languages",
   skills: ["Python", "JavaScript", "TypeScript", "Kotlin"],
@@ -31,19 +29,14 @@ const skillCategories: SkillCategory[] = [{
   skills: ["Docker", "Kubernetes", "Jenkins", "AWS", "CI/CD"],
   icon: <DevOpsSVG className="w-12 h-12 svg-icon" />
 }, {
-  name: "AI & ML",
-  skills: ["LLMs", "TensorFlow", "PyTorch", "Hugging Face", "OpenAI API"],
-  icon: <WebDevSVG className="w-12 h-12 svg-icon" />
-}, {
   name: "Tools",
   skills: ["Git", "GitHub", "GitLab", "Ansible", "Grafana", "Kibana"],
-  icon: <CloudSVG className="w-12 h-12 svg-icon" />
+  icon: <WebDevSVG className="w-12 h-12 svg-icon" />
 }, {
   name: "Operating Systems",
   skills: ["Linux", "MacOS", "Windows"],
   icon: <CloudSVG className="w-12 h-12 svg-icon" />
 }];
-
 const Skills = () => {
   return <section id="skills" className="py-20 relative overflow-hidden">
       <WaveSVG className="absolute top-0 left-0 w-full h-32 text-accent flip" />
@@ -79,5 +72,4 @@ const Skills = () => {
       </div>
     </section>;
 };
-
 export default Skills;
