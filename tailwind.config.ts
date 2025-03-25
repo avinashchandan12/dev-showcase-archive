@@ -28,11 +28,26 @@ export default {
 				mono: ['SF Mono', 'monospace'],
 			},
 			colors: {
-				border: 'hsl(var(--border))',
-				input: 'hsl(var(--input))',
-				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
-				foreground: 'hsl(var(--foreground))',
+				border: {
+					DEFAULT: 'hsl(var(--border))',
+					dark: 'hsl(var(--border-dark))'
+				},
+				input: {
+					DEFAULT: 'hsl(var(--input))',
+					dark: 'hsl(var(--input-dark))'
+				},
+				ring: {
+					DEFAULT: 'hsl(var(--ring))',
+					dark: 'hsl(var(--ring-dark))'
+				},
+				background: {
+					DEFAULT: 'hsl(var(--background))',
+					dark: 'hsl(var(--background-dark))'
+				},
+				foreground: {
+					DEFAULT: 'hsl(var(--foreground))',
+					dark: 'hsl(var(--foreground-dark))'
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -111,6 +126,18 @@ export default {
 				"text-reveal": {
 					"0%": { transform: "translateY(100%)", opacity: "0" },
 					"100%": { transform: "translateY(0)", opacity: "1" }
+				},
+				"float": {
+					"0%, 100%": { transform: "translateY(0)" },
+					"50%": { transform: "translateY(-10px)" }
+				},
+				"bounce-gentle": {
+					"0%, 100%": { transform: "translateY(0)" },
+					"50%": { transform: "translateY(-5px)" }
+				},
+				"spin-slow": {
+					"0%": { transform: "rotate(0deg)" },
+					"100%": { transform: "rotate(360deg)" }
 				}
 			},
 			animation: {
@@ -124,11 +151,17 @@ export default {
 				"slide-left": "slide-left 0.5s ease-out forwards",
 				"slide-right": "slide-right 0.5s ease-out forwards",
 				"pulse-slow": "pulse-slow 3s infinite",
-				"text-reveal": "text-reveal 0.5s ease-out forwards"
+				"text-reveal": "text-reveal 0.5s ease-out forwards",
+				"float": "float 6s ease-in-out infinite",
+				"bounce-gentle": "bounce-gentle 3s ease-in-out infinite",
+				"spin-slow": "spin-slow 20s linear infinite"
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'noise': "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c4S8BQAAAAXVSURBVUAA3YxLEoAgDENRiiAg4POz7H9PdUwduHQ5JnMT0FrPpayEnIK0IgYyDJIg0UgQkSQH+cJIu0j9CHqRGBQEgrzEGiQIvkA6EQYbQNCLRKAkkNxzhxhXKGsAbThjhAFT8CCBAAAAASUVORK5CYII=')",
+				'primary-gradient': 'linear-gradient(to right, #1E3A8A, #9333EA)',
+				'accent-gradient': 'linear-gradient(to right, #0D9488, #06B6D4)',
+				'secondary-gradient': 'linear-gradient(to right, #F87171, #FACC15)',
 			}
 		}
 	},

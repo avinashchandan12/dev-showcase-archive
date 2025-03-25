@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import ThemeToggle from './ThemeToggle';
 
 interface NavLink {
   name: string;
@@ -36,7 +37,7 @@ const Navbar = () => {
     <header 
       className={cn(
         "fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out py-4",
-        isScrolled ? "backdrop-blur-md bg-white/80 shadow-sm" : "bg-transparent"
+        isScrolled ? "backdrop-blur-md bg-white/80 shadow-sm dark:bg-gray-900/80" : "bg-transparent"
       )}
     >
       <div className="container max-w-6xl mx-auto px-4 flex items-center justify-between">
@@ -50,27 +51,31 @@ const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href}
-              className="text-sm hover:text-primary transition-colors link"
+              className="text-sm hover:text-accent transition-colors link"
             >
               {link.name}
             </a>
           ))}
+          <ThemeToggle />
         </nav>
         
         {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-foreground focus:outline-none" 
-          onClick={toggleMenu}
-          aria-label={isOpen ? "Close menu" : "Open menu"}
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-4 md:hidden">
+          <ThemeToggle />
+          <button 
+            className="text-foreground focus:outline-none" 
+            onClick={toggleMenu}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
       
       {/* Mobile Navigation */}
       <div 
         className={cn(
-          "fixed inset-0 bg-white z-40 flex flex-col pt-20 px-6 transform transition-transform duration-300 ease-in-out md:hidden",
+          "fixed inset-0 bg-background dark:bg-background z-40 flex flex-col pt-20 px-6 transform transition-transform duration-300 ease-in-out md:hidden",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
@@ -79,7 +84,7 @@ const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href}
-              className="text-lg font-medium hover:text-primary transition-colors"
+              className="text-lg font-medium hover:text-accent transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
