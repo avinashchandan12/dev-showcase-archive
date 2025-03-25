@@ -1,69 +1,125 @@
-# Welcome to your Lovable project
 
-## Project info
+<div align="center">
+  <h1>🚀 Avinash Chandan | Full Stack Developer & AI Enthusiast</h1>
+  <p><i>Turning complex problems into elegant solutions</i></p>
+  
+  <p>
+    <a href="#about">About</a> •
+    <a href="#skills">Skills</a> •
+    <a href="#projects">Projects</a> •
+    <a href="#experience">Experience</a> •
+    <a href="#contact">Contact</a>
+  </p>
+</div>
 
-**URL**: https://lovable.dev/projects/4eec971e-3fe8-44ea-ada2-d0f1a03607f8
+## ✨ Welcome to My Digital Portfolio
 
-## How can I edit this code?
+This repository contains the code for my personal portfolio website, showcasing my journey, skills, and projects as a Full Stack Developer with a focus on AI and system design.
 
-There are several ways of editing your application.
+![Portfolio Preview](https://img.shields.io/badge/Portfolio-Live-brightgreen)
 
-**Use Lovable**
+## 🧠 About Me
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4eec971e-3fe8-44ea-ada2-d0f1a03607f8) and start prompting.
+I'm Avinash Chandan, a logical interpreter and Full Stack Developer with expertise in Backend development, system design, AI integration, and ensuring system reliability. My passion lies in building robust applications that not only solve real-world problems but are also maintainable and scalable.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 💻 Technical Expertise
 
-**Use your preferred IDE**
+```
+├── Languages
+│   ├── Python
+│   ├── JavaScript
+│   ├── TypeScript
+│   └── Kotlin
+│
+├── Frameworks
+│   ├── Django
+│   ├── Node.js
+│   ├── Angular
+│   └── Jetpack Compose
+│
+├── AI & Machine Learning
+│   ├── LLM Integration
+│   ├── AI Application Development
+│   └── Predictive Modeling
+│
+├── DevOps
+│   ├── Docker
+│   ├── Kubernetes
+│   ├── Jenkins
+│   └── AWS
+│
+└── Databases
+    ├── PostgreSQL
+    ├── MongoDB
+    └── Firebase
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🏆 Featured Projects
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🌟 VS Code Extension with LLMs
+A hackathon-winning VS Code extension that runs on Local LLMs and acts as a co-programmer, providing intelligent code suggestions.
 
-Follow these steps:
+### 🌟 Astro Match AI
+An innovative AI-powered platform for astronomy enthusiasts, helping match users with celestial events and personalized stargazing experiences.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🌟 Trade Insight AI
+A sophisticated AI analytics platform that provides market insights and trade recommendations based on historical data and real-time market conditions.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🌟 E-commerce Platform
+A full-stack e-commerce solution for a USA-based client with robust backend systems and streamlined user experience.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🚀 Professional Experience
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+**Software Engineer** at Sankey Business Solutions  
+*June 2023 - Present*
+
+- Developed backend systems for Fortune 500 automobile company using Django, Docker, and Kubernetes
+- Built e-commerce platforms with Node.js, Angular, and PostgreSQL
+- Created Android applications using Kotlin and Jetpack Compose
+- Implemented CI/CD pipelines with Jenkins, GitLab, and GitHub
+- Won hackathons with AI-powered developer tools
+- Mentored junior engineers in backend best practices
+
+## 🎓 Education
+
+- **B.E. Computer Science** - ViMEET (Mumbai University), 2023
+- **HSC** - Jawahar Navodaya Vidyalaya, Bihiya, 2019
+
+## 📫 Get In Touch
+
+Feel free to reach out if you're looking for a developer, have a question, or just want to connect:
+
+- Email: [avinashchandan12@gmail.com](mailto:avinashchandan12@gmail.com)
+- LinkedIn: [linkedin.com/in/avinashchandan](https://linkedin.com/in/avinashchandan)
+- GitHub: [github.com/avinashchandan12](https://github.com/avinashchandan12)
+- Phone: +91 7903734549
+
+## ⚙️ Technologies Used
+
+This portfolio is built with:
+
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- Vite
+
+## 🔧 Development
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/portfolio.git
+
+# Navigate to the project directory
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/4eec971e-3fe8-44ea-ada2-d0f1a03607f8) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+<div align="center">
+  <p>Made with ❤️ by Avinash Chandan</p>
+</div>
