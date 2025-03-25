@@ -30,12 +30,12 @@ const experiences: ExperienceItem[] = [
 
 const Education = () => (
   <div className="space-y-6">
-    <div className="glass p-6 rounded-xl">
+    <div className="glass dark:glass-dark p-6 rounded-xl hover:shadow-lg transition-all">
       <h3 className="font-semibold text-lg">B.E. Computer Science</h3>
       <p className="text-muted-foreground">ViMEET (Mumbai University)</p>
       <p className="text-sm text-muted-foreground">2023</p>
     </div>
-    <div className="glass p-6 rounded-xl">
+    <div className="glass dark:glass-dark p-6 rounded-xl hover:shadow-lg transition-all">
       <h3 className="font-semibold text-lg">HSC</h3>
       <p className="text-muted-foreground">Jawahar Navodaya Vidyalaya, Bihiya</p>
       <p className="text-sm text-muted-foreground">2019</p>
@@ -45,7 +45,7 @@ const Education = () => (
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 relative overflow-hidden bg-gray-50">
+    <section id="experience" className="py-20 relative overflow-hidden bg-gray-50 dark:bg-gray-900">
       <div className="section-container">
         <ScrollReveal>
           <p className="text-primary font-medium mb-4 text-center">Experience</p>
@@ -71,7 +71,7 @@ const Experience = () => {
             
             <div className="space-y-8">
               {experiences.map((exp, index) => (
-                <div key={index} className="glass p-6 rounded-xl">
+                <div key={index} className="glass dark:glass-dark p-6 rounded-xl hover:shadow-lg transition-all">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                     <div>
                       <h4 className="font-semibold text-xl">{exp.title}</h4>

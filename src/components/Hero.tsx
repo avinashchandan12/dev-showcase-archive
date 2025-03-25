@@ -1,10 +1,10 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import AnimatedText from './ui/AnimatedText';
 import ScrollReveal from './ui/ScrollReveal';
 import CodeSVG from './svg/CodeSVG';
 import WaveSVG from './svg/WaveSVG';
+import TypewriterEffect from './ui/TypewriterEffect';
 
 const Hero = () => {
   return (
@@ -33,17 +33,13 @@ const Hero = () => {
             </ScrollReveal>
             
             <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-              <AnimatedText 
-                text="Avinash Chandan" 
-                tag="span"
-                className="block"
+              <TypewriterEffect 
+                words={[{ text: "Avinash Chandan" }]} 
+                className="block text-gradient"
               />
-              <AnimatedText 
-                text="Software Engineer"
-                tag="span" 
-                className="text-gradient block"
-                delay={0.3}
-              />
+              <ScrollReveal delay={0.3} direction="up">
+                <span className="text-gradient block">Software Engineer</span>
+              </ScrollReveal>
             </h1>
             
             <ScrollReveal delay={0.6} direction="up">

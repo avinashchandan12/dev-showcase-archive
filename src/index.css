@@ -90,11 +90,11 @@
 
 @layer components {
   .glass {
-    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm dark:bg-black/20 dark:border-white/10;
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm transition-all hover:shadow-md;
   }
   
   .glass-dark {
-    @apply bg-black/10 backdrop-blur-md border border-white/10 shadow-md;
+    @apply bg-black/20 backdrop-blur-md border border-white/10 shadow-md transition-all hover:shadow-lg;
   }
   
   .text-gradient {
@@ -122,11 +122,11 @@
   }
   
   .button-primary {
-    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-accent text-primary-foreground hover:bg-accent/90 h-10 px-6 py-6;
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-accent text-primary-foreground hover:bg-accent/90 h-10 px-6 py-6 shadow-sm hover:shadow-md;
   }
   
   .button-secondary {
-    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent/10 hover:text-accent-foreground h-10 px-6 py-6;
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent/10 hover:text-accent-foreground h-10 px-6 py-6 shadow-sm hover:shadow-md;
   }
 
   .hover-scale {
@@ -152,4 +152,17 @@
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
 }
